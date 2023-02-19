@@ -1,7 +1,7 @@
 {
     "name": "andrey-tech/sqlitedb-php",
     "description": "Простая библиотека для работы с СУБД SQLite 3 для несложных проектов на PHP7+",
-    "keywords": [ "pdo", "sqlite", "database", "php" ],
+    "keywords": [ "sqlite", "database", "pdo", "php" ],
     "homepage": "https://github.com/andrey-tech/sqlitedb-php",
     "minimum-stability": "stable",
     "license": "MIT",
@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "php": "^7.2",
+        "php": "^7.2|^8.0",
         "ext-pdo": "*"
     },
     "autoload": {
