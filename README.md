@@ -30,10 +30,10 @@ $ composer require andrey-tech/sqlitedb-php:"^3.0"
 <a id="%D0%9A%D0%BB%D0%B0%D1%81%D1%81-sqlitedb"></a>
 ## Класс `SQLiteDB`
 
-Финальный класс `\AndreyTech\SQLiteDB\SQLiteDB` предназначен для работы с СУБД SQLite 3.  
+Финальный класс `\AndreyTech\SQLiteDB\SQLiteDB` предназначен для работы с СУБД SQLite 3.
 При возникновении ошибок в классах пространства имен `\AndreyTech\SQLiteDB` выбрасывается исключение класса `\AndreyTech\SQLiteDB\SQLiteDBException`.  
 
-Класс `\AndreyTech\SQLiteDB\SQLiteDB` содержит следующие общие публичные методы:
+Класс `\AndreyTech\SQLiteDB\SQLiteDB` содержит следующие публичные методы:
 
 - `__construct(array $config = [], array $options = []): SQLiteDB` Конструктор класса.
     + `$config` - конфигурация соединения с СУБД;
@@ -56,7 +56,7 @@ $ composer require andrey-tech/sqlitedb-php:"^3.0"
 - `beginTransaction(): void` Инициализирует транзакцию.
 - `commitTransaction(): void` Фиксирует транзакцию.
 - `rollbackTransaction(): void` Откатывает транзакцию.
-- `fetchAll(\PDOStatement $stmt): \Generator` Позволяет выбирать все записи с помощью генератора.  
+- `fetchAll(\PDOStatement $stmt): \Generator` Выбирает все записи с помощью генератора.  
     + `$stmt` - объект класса `\PDOStatement`.
 - `getLastInsertId(string $idName = null): string` Возвращает значение `id` последней вставленной записи.
     + `$idName` - имя столбца `id`.
@@ -67,7 +67,7 @@ $ composer require andrey-tech/sqlitedb-php:"^3.0"
 
 ```php
 $config = [
-    'database' => './db.sqlite' // Имя файла СУБД SQLite
+    'database' => './db.sqlite', // Имя файла СУБД SQLite
     'username' => null, // Имя пользователя
     'password' => null, // Пароль пользователя 
 ];
